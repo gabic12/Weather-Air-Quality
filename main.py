@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "YOUR API KEY"
+API_KEY = "8e39e59f020f4a1bbfa123543252005"
 CITY_NAME = "Bucharest"
 
 api_parameters = {
@@ -15,6 +15,7 @@ response.raise_for_status()
 weather_data = response.json()
 
 # Weather variables
+date = weather_data["current"]["last_updated"]
 temp_c = weather_data["current"]["temp_c"]
 condition = weather_data["current"]["condition"]["text"]
 wind_kph = weather_data["current"]["wind_kph"]
@@ -56,7 +57,7 @@ elif us_epa_index == 5:
 else:
     aqi = "Hazardous"
 
-print(f"{CITY_NAME} is {condition}:\n- Temperature: {temp_c}°C\n- Wind speed: {wind_kph} km/h\n"
+print(f"{CITY_NAME} at {date} was {condition}:\n- Temperature: {temp_c}°C\n- Wind speed: {wind_kph} km/h\n"
       f"- UV index: {uv} ({uv_risk} risk of harm!)\n")
 print(f"Air quality is {aqi}:\n- Carbon Monoxide: {co} μg/m3\n- Ozone: {o3} μg/m3\n- Nitrogen dioxide: {no2} μg/m3\n"
       f"- Sulphur dioxide: {so2} μg/m3\n- PM2.5: {pm2_5} μg/m3\n- PM10 {pm10} μg/m3")
