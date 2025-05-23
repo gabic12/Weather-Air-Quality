@@ -68,4 +68,4 @@ print(f"Sunrise: {sunrise}\nSunset: {sunset}\nMoon phase: {moon_phase}\n")
 print(f"{CITY_NAME} at {date} was {condition}:\n- Temperature: {temp_c}°C\n- Wind speed: {wind_kph} km/h\n"
       f"- Cloud coverage: {cloud}%\n- Chance of rain: {chance_of_rain}%\n- UV index: {uv} ({uv_risk} risk of harm!)\n")
 print(f"Air quality is {aqi}:\n- Carbon Monoxide: {co} μg/m3\n- Ozone: {o3} μg/m3\n- Nitrogen dioxide: {no2} μg/m3\n"
-      f"- Sulphur dioxide: {so2} μg/m3\n- PM2.5: {pm2_5} μg/m3\n- PM10 {pm10} μg/m3")
+      f"- Sulphur dioxide: {so2} μg/m3\n- PM2.5: {pm2_5} μg/m3\n- PM10: {pm10} μg/m3")
