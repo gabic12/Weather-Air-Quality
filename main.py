@@ -1,6 +1,6 @@
 import requests
 
-API_KEY = "8e39e59f020f4a1bbfa123543252005"
+API_KEY = "YOUR API KEY"
 CITY_NAME = "Bucharest"
 
 weather_api_parameters = {
